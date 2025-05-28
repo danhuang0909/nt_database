@@ -7,7 +7,7 @@ The data related to this research has been visualized on the UCSC Genome Browser
 
 [UCSC hg38 version](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
 
-[UCSC hg37 version](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
+[UCSC hg37 version](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
 ## GitHub Data Download
 
 To facilitate academic communication and data reuse, the original data and processed results of this research have been uploaded to the GitHub repository. You can download the data directly via the following link for further analysis and research:
