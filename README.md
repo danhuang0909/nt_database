@@ -71,18 +71,21 @@ Use the bedGraph's **first three columns** (`chrom`, `start`, `end`) to query th
 chr2 88592137 88592138 [look up in annotation file]
 ### Step 3: Extract Junction Metadata
 The matching entry in the annotation file will contain:
+
 chr2 88592137 88592138 LUSC;2;88890526;88892790_50th 50th 0.0
 
+```
+
 ##How to Use in UCSC Genome Browser
-Step 1: Upload the BedGraph File
-Go to the UCSC Genome Browser.
-Select the appropriate genome assembly (e.g., hg38).
-Click Add Custom Track → Paste Data and upload your bedGraph file.
-Configure track settings:
-Track Type: bedGraph
-Visibility: full (to show all percentiles as separate bars)
-Color: Customize (e.g., 0,99,99 for teal).
-Click Submit to visualize the data.
+###Step 1: Upload the BedGraph File
+###Go to the UCSC Genome Browser.
+###Select the appropriate genome assembly (e.g., hg38).
+###Click Add Custom Track → Paste Data and upload your bedGraph file.
+###Configure track settings:
+###Track Type: bedGraph
+####Visibility: full (to show all percentiles as separate bars)
+####Color: Customize (e.g., 0,99,99 for teal).
+####Click Submit to visualize the data.
 
 ## Contact Information
 
