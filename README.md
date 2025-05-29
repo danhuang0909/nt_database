@@ -16,7 +16,7 @@ To facilitate academic communication and data reuse, the original data and proce
 
 
 
-### 1. BedGraph File   
+## 1. BedGraph File   
 **Format**: UCSC bedGraph (4 columns)  
 | Column       | Description                                                                 |  
 |--------------|-----------------------------------------------------------------------------|  
@@ -40,7 +40,7 @@ chr1    10001    10002    22.3    # 75th percentile
 
 ```
 
-### 2. Corresponding annotation file
+## 2. Corresponding annotation file
 
 ## File Format Overview
 This annotation file maps **bedGraph positions** to **original junctions**, enabling cross-referencing between genomic coordinates and junction metadata. It contains **6 columns**:
