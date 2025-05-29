@@ -41,7 +41,6 @@ chr1    10001    10002    22.3    # 75th percentile
 ```
 
 ### 2. Corresponding annotation file
-# Annotation File Documentation
 
 ## File Format Overview
 This annotation file maps **bedGraph positions** to **original junctions**, enabling cross-referencing between genomic coordinates and junction metadata. It contains **6 columns**:
