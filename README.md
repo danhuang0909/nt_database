@@ -76,16 +76,20 @@ chr2 88592137 88592138 LUSC;2;88890526;88892790_50th 50th 0.0
 
 ```
 ```
-## How to Use in UCSC Genome Browser
-### Step 1: Upload the BedGraph File
-### Go to the UCSC Genome Browser.
-### Select the appropriate genome assembly (e.g., hg38).
-### Click Add Custom Track → Paste Data and upload your bedGraph file.
-### Configure track settings:
-### Track Type: bedGraph
-#### Visibility: full (to show all percentiles as separate bars)
-#### Color: Customize (e.g., 0,99,99 for teal).
-#### Click Submit to visualize the data.
+### How to Use in UCSC Genome Browser
+
+1. **Upload the BedGraph File**  
+   - Go to the [UCSC Genome Browser](https://genome.ucsc.edu/).  
+   - Select the appropriate genome assembly (e.g., hg38).  
+   - Click **Add Custom Track** → **Paste Data** and upload your bedGraph file.  
+
+2. **Configure Track Settings**  
+   - **Track Type**: `bedGraph`  
+   - **Visibility**: `full` (to show all percentiles as separate bars)  
+   - **Color**: Customize (e.g., `0,99,99` for teal).  
+
+3. **Submit to Visualize**  
+   - Click **Submit** to visualize the data.  
 
 ## Contact Information
 
