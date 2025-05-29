@@ -74,8 +74,8 @@ The matching entry in the annotation file will contain:
 
 chr2 88592137 88592138 LUSC;2;88890526;88892790_50th 50th 0.0
 
-```
-```
+
+
 ### How to Use in UCSC Genome Browser
 
 1. **Upload the BedGraph File**  
