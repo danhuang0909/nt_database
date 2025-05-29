@@ -16,7 +16,7 @@ To facilitate academic communication and data reuse, the original data and proce
 
 
 
-### 1. BedGraph File (`*.bedgraph`)  
+### 1. BedGraph File   
 **Format**: UCSC bedGraph (4 columns)  
 | Column       | Description                                                                 |  
 |--------------|-----------------------------------------------------------------------------|  
@@ -26,7 +26,7 @@ To facilitate academic communication and data reuse, the original data and proce
 | `value`      | Expression value (numeric, e.g., percentile or max value)                   |  
 
 **Position Calculation**:  
-- Each interval is **1 base pair wide** and centered around the junction's midpoint (`med_pos`):  
+- Each interval is **1 base pair wide** and centered around the junction's midpoint (`med_pos`).med_pos = (junction_start + junction_end) // 2:  
   - **50th percentile**: `med_pos - 3` to `med_pos - 2`  
   - **75th percentile**: `med_pos - 2` to `med_pos - 1`  
   - **90th percentile**: `med_pos - 1` to `med_pos`  
@@ -37,6 +37,50 @@ To facilitate academic communication and data reuse, the original data and proce
 ```bedgraph
 chr1    10000    10001    15.2    # 50th percentile of junction chr1:9997-10003 (med_pos=10000)
 chr1    10001    10002    22.3    # 75th percentile
+
+### 2. Corresponding annotation file
+# Annotation File Documentation
+
+## File Format Overview
+This annotation file maps **bedGraph positions** to **original junctions**, enabling cross-referencing between genomic coordinates and junction metadata. It contains **6 columns**:
+
+| Column              | Description                                                                 |
+|---------------------|-----------------------------------------------------------------------------|
+| `chrom`             | Chromosome (e.g., `chr2`)                                                   |
+| `start`             | Start position of the bedGraph interval (0-based, exclusive)               |
+| `end`               | End position of the bedGraph interval (0-based, exclusive)                 |
+| `junction_tag`      | Original junction metadata formatted as `{cancer_type};{chr};{start};{end}_{percentile}` |
+| `percentile`        | Expression percentile (e.g., `50th`, `max`)                                |
+| `value`             | Numeric expression value                                                    |
+
+
+## Mapping BedGraph Positions to Junctions
+
+### Step 1: Identify BedGraph Coordinates
+In your bedGraph file, each line contains:
+- **Chromosome**: `chr2`
+- **Start Position**: `88592137`
+- **End Position**: `88592138`
+
+
+### Step 2: Find Matching Entries in Annotation File
+Use the bedGraph's **first three columns** (`chrom`, `start`, `end`) to query the annotation file.  
+**Example Query**:
+chr2 88592137 88592138 [look up in annotation file]
+### Step 3: Extract Junction Metadata
+The matching entry in the annotation file will contain:
+chr2 88592137 88592138 LUSC;2;88890526;88892790_50th 50th 0.0
+
+##How to Use in UCSC Genome Browser
+Step 1: Upload the BedGraph File
+Go to the UCSC Genome Browser.
+Select the appropriate genome assembly (e.g., hg38).
+Click Add Custom Track → Paste Data and upload your bedGraph file.
+Configure track settings:
+Track Type: bedGraph
+Visibility: full (to show all percentiles as separate bars)
+Color: Customize (e.g., 0,99,99 for teal).
+Click Submit to visualize the data.
 
 ## Contact Information
 
