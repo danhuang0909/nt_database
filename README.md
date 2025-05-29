@@ -15,6 +15,29 @@ To facilitate academic communication and data reuse, the original data and proce
 [Data Download](https://github.com/danhuang0909/nt_database/tree/main/data)
 
 
+
+### 1. BedGraph File (`*.bedgraph`)  
+**Format**: UCSC bedGraph (4 columns)  
+| Column       | Description                                                                 |  
+|--------------|-----------------------------------------------------------------------------|  
+| `chrom`      | Chromosome (e.g., `chr1`, `chrX`)                                         |  
+| `start`      | Start position (0-based, exclusive)                                        |  
+| `end`        | End position (0-based, exclusive; interval: `[start, end)` )               |  
+| `value`      | Expression value (numeric, e.g., percentile or max value)                   |  
+
+**Position Calculation**:  
+- Each interval is **1 base pair wide** and centered around the junction's midpoint (`med_pos`):  
+  - **50th percentile**: `med_pos - 3` to `med_pos - 2`  
+  - **75th percentile**: `med_pos - 2` to `med_pos - 1`  
+  - **90th percentile**: `med_pos - 1` to `med_pos`  
+  - **95th percentile**: `med_pos` to `med_pos + 1`  
+  - **Max value**: `med_pos + 1` to `med_pos + 2`  
+
+**Example**:  
+```bedgraph
+chr1    10000    10001    15.2    # 50th percentile of junction chr1:9997-10003 (med_pos=10000)
+chr1    10001    10002    22.3    # 75th percentile
+
 ## Contact Information
 
 If you have any questions or wish to discuss potential collaborations, please feel free to contact us at [danhuang2018dana@gmail.com]. We look forward to hearing from you!
