@@ -12,9 +12,8 @@ The data related to this research has been visualized on the UCSC Genome Browser
 
 To facilitate academic communication and data reuse, the original data and processed results of this research have been uploaded to the GitHub repository. You can download the data directly via the following link for further analysis and research:
 
-[Data Download_hg37](https://github.com/danhuang0909/nt_database/hg37_Data.gz)
+[Data Download_hg37](https://github.com/danhuang0909/nt_database/data/)
 
-[Data Download_hg38](https://github.com/danhuang0909/nt_database/hg38_Data.gz)
 
 ## Contact Information
 
