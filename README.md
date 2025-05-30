@@ -95,4 +95,6 @@ chr2 88592137 88592138 LUSC;2;88890526;88892790_50th 50th 0.0
 If you have any questions or wish to discuss potential collaborations, please feel free to contact us at [danhuang2018dana@gmail.com]. We look forward to hearing from you!
 
 Thank you for your interest in our research. We hope these data resources will contribute to your academic pursuits.
-    
+
+## Citation
+Huang, Dan. "Profiling of Alternative Splicing in Cancer." Doctoral dissertation, The Chinese University of Hong Kong, 2018.
