@@ -1,10 +1,16 @@
 # ntRNA Junction Database of Non-productive Transcript RNA (nt-RNA)
 
 ## Overview
-This repository contains a comprehensive database of non-productive transcript RNA (nt-RNA) signature junctions identified from The Cancer Genome Atlas (TCGA) pan-cancer analysis. These data represent the first systematic characterization of unproductive splicing events (nt-RNA) across multiple cancer types, providing a valuable resource for understanding alternative splicing dysregulation in cancer. By focusing only on junctional reads, our method circumvents the shortcomings of non-directional mRNA sequencing in the TCGA database, enabling a unique whole-genome survey of nt-RNA.
+This repository contains a comprehensive database of a kind of non-productive transcript RNA and its signature (toxic) junctions identified from The Cancer Genome Atlas (TCGA) pan-cancer analysis. These data represent the first systematic characterization of such unproductive splicing events across multiple cancer types, providing a valuable resource for understanding alternative splicing dysregulation in biology. By focusing only on junctional reads, our method circumvents the shortcomings of non-directional mRNA sequencing in the TCGA database, enabling a unique whole-genome survey of ntRNA and their signature junctions.
 
 ## Background
-Non-productive transcripts (nt-RNAs) are isoform transcripts produced from protein-coding genes that contain frame-shifts or premature termination codons due to alternative splicing. These transcripts can be produced by various alternative splicing mechanisms (e.g., exon-skipping, exon extension) and cannot be translated into functional proteins. They may undergo nonsense-mediated decay (NMD). Our analysis of a large number of cancer transcriptomes (RNAseq) across 13 cancer types from TCGA revealed that nt-RNA expression is widespread, with most protein-coding genes producing nt-RNAs at levels typically representing up to 10% or more of the steady-state amount of gene transcripts.
+Unproductive transcripts are mRNA transcripts with defective coding of the open reading frame (ORF) or targeted for degradation (e.g. NMD), which are commonly caused by alternative splicing among other molecular mechanisms. These transcripts can be produced by various alternative splicing mechanisms (e.g., exon-skipping, exon extension) leading to frameshift of the protein coding sequence (CDS) and cannot be translated into functional proteins. They may undergo nonsense-mediated decay (NMD). 
+Previous works and databases focused on the exons as the functional unit of splicing (exon-centric). We carried out the first large-scale junction-centric search for non-translational mRNA in the cancer genome. We confined our analysis to only junctional reads of RNA-seq. Junctions are the boundaries of two adjacent exons that are joined together by the splicing of the pre-mRNA. From there, we can identify toxic junctions that cause a frame shift in the protein-coding sequence (CDS) with a high degree of confidence. These toxic junctions will result in non-translational transcripts (nt-RNA) and they can be used as splicing signatures for further analysis of cancer transcriptome. Please also see Figure 1.
+Our analysis of a large number of cancer transcriptomes (RNA-seq) across 13 cancer types from TCGA revealed that expression of these nt-RNA junctions is widespread, with most protein-coding genes producing nt-RNAs at levels typically representing up to 10% or more of the steady-state amount of gene transcripts. Production of nt-RNA is an emerging mechanism of regulation of gene function and protein production.
+
+## Remarks:  
+In the UCSC map, the toxic junctions of nt-RNA are shown together with 15 bps of the two spanning exons. They have been verified and required features of the retrieval algorithm for toxic junctions. 
+Genome position specification in UCSC browser could be in either one of the 2 systems,  0-based or 1-based. The data file we uploaded to UCSC browser is in BED format, which has to be 0-based in order to show at the right genome coordinate in the UCSC browser. On the other hand, the data file we stored in the cloud drive is 1-based, which is the actual genome position of the toxic junctions.  Please refer to UCSC for a detailed explanation of the 2 coordinate counting systems (https://genome-blog.gi.ucsc.edu/blog/2016/12/12/the-ucsc-genome-browser-coordinate-counting-systems/).
 
 ## Data Content
 ### Known nt-RNA Signature Junctions
@@ -24,7 +30,7 @@ Expression values are provided as percentiles (50th, 75th, 90th, 95th, and maxim
 ### UCSC Genome Browser Integration
 Interactive visualization of all nt-RNA signature junctions is available through custom tracks on the UCSC Genome Browser:
 - **UCSC hg38 version**: [Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
-- **UCSC hg37 version**: [Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
+- **UCSC hg19 version**: [Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
 
 ### GitHub Bulk Data Download
 To facilitate your own analysis, you can download the data directly via the following link:  
