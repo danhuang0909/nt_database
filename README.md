@@ -5,7 +5,9 @@ This repository contains a comprehensive database of a kind of non-productive tr
 
 ## Background
 Unproductive transcripts are mRNA transcripts with defective coding of the open reading frame (ORF) or targeted for degradation (e.g. NMD), which are commonly caused by alternative splicing among other molecular mechanisms. These transcripts can be produced by various alternative splicing mechanisms (e.g., exon-skipping, exon extension) leading to frameshift of the protein coding sequence (CDS) and cannot be translated into functional proteins. They may undergo nonsense-mediated decay (NMD). 
+
 Previous works and databases focused on the exons as the functional unit of splicing (exon-centric). We carried out the first large-scale junction-centric search for non-translational mRNA in the cancer genome. We confined our analysis to only junctional reads of RNA-seq. Junctions are the boundaries of two adjacent exons that are joined together by the splicing of the pre-mRNA. From there, we can identify toxic junctions that cause a frame shift in the protein-coding sequence (CDS) with a high degree of confidence. These toxic junctions will result in non-translational transcripts (nt-RNA) and they can be used as splicing signatures for further analysis of cancer transcriptome. Please also see Figure 1.
+
 Our analysis of a large number of cancer transcriptomes (RNA-seq) across 13 cancer types from TCGA revealed that expression of these nt-RNA junctions is widespread, with most protein-coding genes producing nt-RNAs at levels typically representing up to 10% or more of the steady-state amount of gene transcripts. Production of nt-RNA is an emerging mechanism of regulation of gene function and protein production.
 
 ## Remarks:  
