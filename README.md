@@ -33,20 +33,21 @@ Expression values are provided as percentiles (50th, 75th, 90th, 95th, and maxim
 Interactive visualization of all nt-RNA signature junctions is available through custom tracks on the UCSC Genome Browser:
 - **UCSC all nt-RNA signature junctions **:
 
-[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
+   -[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
 
-[Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
+   -[Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
 
 Interactive visualization of all new nt-RNA signature junctions that will cause frame shift is available through custom tracks on the UCSC Genome Browser:
 - **UCSC all new nt-RNA signature junctions(frame shift) **:
 
-[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
+   -[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
 
-[Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
+   -[Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
 
 ### GitHub Bulk Data Download
 To facilitate your own analysis, you can download the data directly via the following link:  
 [Data Download](https://github.com/username/repository-name/archive/main.zip)
+![image](https://github.com/user-attachments/assets/f3f0725a-d5a7-4afd-b53c-6278bd84b058)
 
 Each junction displays five expression values (median, 75th, 90th, 95th, and max), allowing researchers to study expression patterns of nt-RNA signature junctions across different cancer types.
 
@@ -92,8 +93,8 @@ chr2 88592138 88592139 LUSC;2;88890526;88892790_75th 75th 22.3
 1. Navigate to the [UCSC Genome Browser](https://genome.ucsc.edu/).
 2. Select the appropriate genome assembly (hg19 or hg38).
 3. Access our custom tracks through the provided links:
-   - [hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
-   - [hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
+   - [hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
+   - [hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
 4. Navigate to your region of interest to view nt-RNA junction expression.
 
 ### Local Data Analysis
