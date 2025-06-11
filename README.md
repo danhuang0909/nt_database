@@ -38,16 +38,16 @@ Expression values are provided as percentiles (50th, 75th, 90th, 95th, and maxim
 Interactive visualization of all nt-RNA signature junctions is available through custom tracks on the UCSC Genome Browser:
 - **all junctions (novel unannotated and known )**:
 
-   -[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
+   -[Access GRCh38/hg38](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
 
-   -[Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
+   -[Access GRCh37/hg19](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
 
 Interactive visualization of all new nt-RNA signature junctions that will cause frame shift is available through custom tracks on the UCSC Genome Browser:
-- **Subset of toxic junctions(with all new nt-RNA signature junctions(frame shift) **:
+- **Subset of toxic junctions(with aORF frame shift)**:
 
-   -[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
+   -[Access GRCh38/hg38](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
 
-   -[Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
+   -[Access GRCh37/hg19](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
 
 ### GitHub Bulk Data Download
 To facilitate your own analysis, you can download the data directly via the following link:  
@@ -98,8 +98,8 @@ chr2 88592138 88592139 LUSC;2;88890526;88892790_75th 75th 22.3
 1. Navigate to the [UCSC Genome Browser](https://genome.ucsc.edu/).
 2. Select the appropriate genome assembly (hg19 or hg38).
 3. Access our custom tracks through the provided links:
-   - [hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
-   - [hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
+   - [GRCh38/hg38](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
+   - [GRCh37/hg19](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
 4. Navigate to your region of interest to view nt-RNA junction expression.
 
 ### Local Data Analysis
