@@ -9,6 +9,7 @@ Unproductive transcripts are mRNA transcripts with defective coding of the open 
 Previous works and databases focused on the exons as the functional unit of splicing (exon-centric). We carried out the first large-scale junction-centric search for non-translational mRNA in the cancer genome. We confined our analysis to only junctional reads of RNA-seq. Junctions are the boundaries of two adjacent exons that are joined together by the splicing of the pre-mRNA. From there, we can identify toxic junctions that cause a frame shift in the protein-coding sequence (CDS) with a high degree of confidence. These toxic junctions will result in non-translational transcripts (nt-RNA) and they can be used as splicing signatures for further analysis of cancer transcriptome. Please also see Figure 1.
 
 ![image](https://github.com/danhuang0909/nt_database/blob/main/data/Figure%201%20NT%2020250610.jpg)
+Figure1 Diagram of the Impact of Alternative Splicing Events on the Function of Non-translational RNA and the Generation of Toxic Junctions
 
 
 Our analysis of a large number of cancer transcriptomes (RNA-seq) across 13 cancer types from TCGA revealed that expression of these nt-RNA junctions is widespread, with most protein-coding genes producing nt-RNAs at levels typically representing up to 10% or more of the steady-state amount of gene transcripts. Production of nt-RNA is an emerging mechanism of regulation of gene function and protein production.
