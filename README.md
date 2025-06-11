@@ -36,14 +36,14 @@ Expression values are provided as percentiles (50th, 75th, 90th, 95th, and maxim
 ## Data Visualization
 ### UCSC Genome Browser Integration
 Interactive visualization of all nt-RNA signature junctions is available through custom tracks on the UCSC Genome Browser:
-- **UCSC all nt-RNA signature junctions **:
+- **all junctions (novel unannotated and known )**:
 
    -[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
 
    -[Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
 
 Interactive visualization of all new nt-RNA signature junctions that will cause frame shift is available through custom tracks on the UCSC Genome Browser:
-- **UCSC all new nt-RNA signature junctions(frame shift) **:
+- **Subset of toxic junctions(with all new nt-RNA signature junctions(frame shift) **:
 
    -[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
 
