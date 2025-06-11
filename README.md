@@ -31,12 +31,14 @@ Expression values are provided as percentiles (50th, 75th, 90th, 95th, and maxim
 ## Data Visualization
 ### UCSC Genome Browser Integration
 Interactive visualization of all nt-RNA signature junctions is available through custom tracks on the UCSC Genome Browser:
-- **UCSC hg38 version**: [Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
-- **UCSC hg19 version**: [Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
+- **UCSC all nt-RNA signature junctions **:
+[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_all_new_nr)
+[Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_all_new_nr)
 
 Interactive visualization of all new nt-RNA signature junctions that will cause frame shift is available through custom tracks on the UCSC Genome Browser:
-- **UCSC hg38 version**: [Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
-- **UCSC hg19 version**: [Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
+- **UCSC all new nt-RNA signature junctions(frame shift) **:
+[Access hg38 tracks](https://genome.ucsc.edu/s/dandan_0909/hg38_5_26)
+[Access hg19 tracks](https://genome.ucsc.edu/s/dandan_0909/hg19_version)
 
 ### GitHub Bulk Data Download
 To facilitate your own analysis, you can download the data directly via the following link:  
