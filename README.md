@@ -19,6 +19,8 @@ Our analysis of a large number of cancer transcriptomes (RNA-seq) across 13 canc
 In the UCSC map, the toxic junctions of nt-RNA are shown together with 15 bps of the two spanning exons. They have been verified and required features of the retrieval algorithm for toxic junctions. 
 Genome position specification in UCSC browser could be in either one of the 2 systems,  0-based or 1-based. The data file we uploaded to UCSC browser is in BED format, which has to be 0-based in order to show at the right genome coordinate in the UCSC browser. On the other hand, the data file we stored in the cloud drive is 1-based, which is the actual genome position of the toxic junctions.  Please refer to UCSC for a detailed explanation of the 2 coordinate counting systems (https://genome-blog.gi.ucsc.edu/blog/2016/12/12/the-ucsc-genome-browser-coordinate-counting-systems/).
 
+Junctions without a match or with multiple matches to the hg38 genome version are shown here ([fail conversion](https://github.com/danhuang0909/nt_database/tree/main/converstion_to_38))
+
 ## Data Content
 ### Known nt-RNA Signature Junctions
 - Curated catalog of nt-RNA signature junctions from NCBI, Ensembl, and NONCODE databases.
