@@ -135,6 +135,7 @@ A Python-based tool for analyzing RNA sequencing data in BAM format, focusing on
 
 ## Documentation
 For detailed usage instructions, parameter explanations, and workflow details, visit: 
+
 [📚 Full Documentation](docs/documentation.md)
 
 
