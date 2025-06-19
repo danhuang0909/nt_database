@@ -125,15 +125,17 @@ This database enables researchers to:
 - Investigate tissue-specific alternative splicing events.
 - Characterize novel transcript isoforms.
 
+# BAM File Processing Tool 
+A Python-based tool for analyzing RNA sequencing data in BAM format, focusing on splice junction detection and high-quality read filtering.  
 
-# BAM File Processing Tool
-
-This tool analyzes splice junctions and high-quality reads in sequencing data, supporting deep processing of BAM files.
+## Key Features
+- **High-quality read filtering**: Retain reads with mapping quality ≥40.
+- **Splice junction detection**: Identify both known and novel RNA splice events.
+- **Paired-end read analysis**: Characterize insert sizes of high-confidence reads.
 
 ## Documentation
-
-For detailed usage instructions and function descriptions, visit:  
-[📚 Tool Documentation](docs/documentation.md)
+For detailed usage instructions, parameter explanations, and workflow details, visit: 
+[📚 Full Documentation](docs/documentation.md)
 
 
 ## Acknowledgment
