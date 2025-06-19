@@ -133,7 +133,7 @@ This tool analyzes splice junctions and high-quality reads in sequencing data, s
 ## Documentation
 
 For detailed usage instructions and function descriptions, visit:  
-[📚 Tool Documentation](docs/documentation.html)
+[📚 Tool Documentation](docs/documentation.md)
 
 
 ## Acknowledgment
