@@ -19,7 +19,7 @@ This tool analyzes sequencing data in BAM format, supporting functions such as f
 | `-h`      | Flag | Display help message and exit | No |
 | `-b`      | String (file path) | Input BAM file path (e.g., `input.bam`) | Yes |
 | `-o`      | String (directory path) | Root output directory (results stored in `step1_filter_current_junction_read` subdirectory) | Yes |
-| `-r`      | String (identifier) | Identifier for the target splice junction (optional but required for junction-specific filtering) | No |
+| `-r`      | String (identifier) | Identifier for the target splice junction (required for junction-specific filtering) | Yes |
 
 
 ### 2.2 Example Command
@@ -27,7 +27,7 @@ This tool analyzes sequencing data in BAM format, supporting functions such as f
 python script.py -b ./data/sample.bam -o ./results -r target_junction
 
 ### Explanation  
-This command processes `sample.bam`, saves results to `./results/step1_filter_current_junction_read`, and filters reads related to `target_junction`.  
+This command processes `sample.bam`, saves results to `./results`, and filters reads related to `target_junction`.  
 
 
 ### 3. Core Function Details  
